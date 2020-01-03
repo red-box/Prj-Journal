@@ -1,0 +1,13 @@
+<div class="mainContainer">
+    <div class="header">
+        <menu-navigation (addFormToggleEvent)="childAddFormToggle()">
+        </menu-navigation>
+    </div>
+    <div class="content">
+        <project-navigation (projectSelectEvent)="childProjectSelect($event)"></project-navigation>
+        <project-overview [event]="clickedProject"></project-overview>
+    </div>
+</div>
+<div class="newProjectForm" *ngIf="toggleForm">
+    <project-form (closeFormEvent)="childAddFormToggle()"></project-form>
+</div>

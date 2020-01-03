@@ -1,0 +1,33 @@
+@import "Font-Colors";
+
+
+
+.mainContainer{
+    @include flex-col;
+    width: 100vw;
+    height: 100vh;
+    background: $background-Grey;
+    overflow: hidden;
+
+    .header{
+        width: 100vw;
+        height: 50px;
+        background: $primary-Black;
+        
+    }
+    .content{
+        @include flex-row;
+        width: 100vw;
+        max-width: 1024px;
+    }
+}
+.newProjectForm{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+}

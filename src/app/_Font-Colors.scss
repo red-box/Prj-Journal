@@ -1,0 +1,24 @@
+$font-Header:    "poppins", helvetica, sans-serif;
+$primary-Black: #171717;
+$error-Red: red;
+$good-Green: #68C660;
+$light-Grey: #D0D4D9;
+$background-Grey:#F8F8F8;   
+
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-verticalCenter{
+    display: flex;
+    align-items: center;
+}

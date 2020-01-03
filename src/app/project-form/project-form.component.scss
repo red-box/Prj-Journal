@@ -1,0 +1,52 @@
+@import "../Font-Colors";
+
+.projectForm {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border: 1px solid $light-Grey;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+.border {
+  height: 1px;
+  border-bottom: 1px solid $light-Grey;
+  width: 100%;
+  margin: 14px 0;
+}
+
+form {
+
+  input,
+  textarea {
+    padding: 8px;
+    border: 1px solid $light-Grey;
+    border-radius: 4px;
+    font-family: $font-Header;
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+  textarea {
+    height: auto;
+    min-height: 100px;
+  }
+
+
+}
+
+.btnContainer {
+  justify-content: flex-end;
+
+  .btn{
+    margin-left: 10px;
+  }
+}

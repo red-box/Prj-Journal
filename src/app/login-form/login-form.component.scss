@@ -1,0 +1,26 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .content {
+    width: 320px;
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    box-shadow: 6px 6px #EFEFEF;
+  }
+
+  .buttonContainer {
+    width: 227px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

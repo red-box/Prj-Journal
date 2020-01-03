@@ -1,0 +1,28 @@
+@import "../Font-Colors";
+
+.itemLog {
+  padding: 15px;
+  border: 1px solid $light-Grey;
+  border-radius: 3px;
+
+  .header {
+    width: 100%;
+    padding: 0 0 15px 0;
+    background: #fff
+  }
+
+  .content {
+    height: 200px;
+    width: auto;
+    overflow: scroll;
+  }
+}
+
+ul li {
+  display: flex;
+  flex-direction: row;
+
+  .editTimestamp {
+    margin-right: 8px;
+  }
+}

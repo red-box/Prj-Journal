@@ -1,0 +1,26 @@
+<div class="projectOverviewContainer" *ngIf="event">
+  <div class="projectOverview">
+    <div class="content">
+      <div class="header">
+        <div class="title">
+          <h4>Project {{event.title}}</h4>
+          <img src="/assets/icons/settings-icon.svg">
+        </div>
+        <div class="timeAndGithub">
+          <p>{{event.initDateAndTime}}</p>
+          <a href="{{event.githubLink}}"><img src="/assets/icons/github.svg"></a>
+        </div>
+      </div>
+      <p>{{event.details}}</p>
+    </div>
+  </div>
+  <div class="projectComments">
+    <div class="comment" *ngFor="let events of event.comment">
+      <div class="commentHeader">
+        <p class="date">{{events.initDateAndTime}}</p>
+        <img src="assets/icons/settings-icon.svg">
+      </div>
+      <p>{{events.commentDetails}}</p>
+    </div>
+  </div>
+</div>

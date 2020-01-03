@@ -1,0 +1,19 @@
+@import "../Font-Colors";
+
+.deleteConfirm {
+  padding: 30px;
+  border: 1px solid $light-Grey;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+}
+
+.btnContainer {
+  justify-content: center;
+}

@@ -1,0 +1,90 @@
+@import "../font-Colors";
+
+.nav {
+  width: 100%;
+  height: 48px;
+  background: $primary-Black;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+
+  .navContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    max-width: 1024px;
+    min-width: 320px;
+    margin: 0 10px;
+    padding: 0 2%;
+
+    .navButton {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      padding: 1px;
+
+      .bar {
+        position: absolute;
+        z-index: 100;
+        width: 23px;
+        height: 3px;
+        background: #fff;
+        margin-bottom: 7px;
+        transition: all .2s ease-in-out;
+      }
+
+      .half {
+        width: 45%;
+      }
+    }
+
+    .add {
+      .vertical {
+        top: 12px;
+        transform: rotate(90deg);
+      }
+
+      .horizontal {
+        top: 12px;
+      }
+
+      .verticalToggle{
+        transform: rotate(45deg);
+      }
+      .horizontalToggle{
+        transform: rotate(135deg);
+      }
+    }
+
+    .mobileMenu {
+
+      .bmTop {
+        top: 3px;
+      }
+
+      .bmMid {
+        top: 13px;
+      }
+
+      .bmBot {
+        top: 23px;
+      }
+
+      .bmTopActive {
+        top: 12px;
+        transform: rotate(-45deg);
+      }
+
+      .bmMidActive {
+        top: 12px;
+        transform: rotate(45deg);
+      }
+
+      .bmBotActive {
+        width: 0px;
+      }
+    }
+  }
+}

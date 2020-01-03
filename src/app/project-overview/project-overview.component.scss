@@ -1,0 +1,69 @@
+@import "../Font-Colors";
+
+.projectOverviewContainer{
+  height: 92vh;
+  overflow: scroll;
+}
+
+.projectOverview {
+  width: 100vw;
+  max-width: 730px;
+  border: 1px solid $light-Grey;
+  margin: 5px 5px;
+  margin-bottom: 5px;
+  background: #fff;
+  padding: 15px;
+  
+}
+.header{
+
+  .title{
+  @include flex-row;
+  justify-content: space-between;
+  }
+
+  .timeAndGithub{
+    @include flex-row;
+    p{
+      margin-right: 10px;
+    }
+  }
+}
+
+h4 {
+  font-family: $font-Header;
+  margin-bottom: 14px;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+.projectComments{
+
+  .comment{
+    width: 100vw;
+    max-width: 730px;
+    border: 1px solid $light-Grey;
+    margin: 0 5px;
+    margin-bottom: 5px;
+    background: #fff;
+    padding: 15px;
+
+    .commentHeader{
+        @include flex-row;
+        justify-content: space-between;
+
+        img {
+            width: 24px;
+            height: 24px;
+          }
+          span{
+              @include flex-row;
+              .time{
+                  margin-left: 10px;
+              }
+          }
+    }
+  }
+}

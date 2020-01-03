@@ -1,0 +1,22 @@
+<div class="project-navigation">
+  <div class="content">
+    <div class="header">
+      <div class="title">
+        <h4>Projects</h4>
+      </div>
+      <input class="searchInputField" placeholder="Search projects">
+      <div class="search" (click)="searchToggle()">
+        <img src="assets/icons/search.svg">
+      </div>
+    </div>
+
+    <div class="projectListContainer" (click)="toggleOff()">
+      <ul>
+        <li *ngFor="let data of data$ | async" (click)="projectSelect(data)">
+          <div class="listIcon {{data.id}}"></div>
+          <p>{{data.title}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
